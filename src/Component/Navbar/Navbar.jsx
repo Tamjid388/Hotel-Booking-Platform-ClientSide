@@ -1,19 +1,19 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
     const navOptions=
     <>
     <li><NavLink className={'mx-1'} to={'/'}> Home</NavLink></li>
-    <li><NavLink className={'mx-1'} to={'/'}>Menu</NavLink></li>
-    <li><NavLink className={'mx-1'} to={'/'}>Order</NavLink></li>
+    <li><NavLink className={'mx-1'} to={'/rooms'}>Rooms</NavLink></li>
+    <li><NavLink className={'mx-1'} to={'/register'}>Register</NavLink></li>
     
    
     </>
   return (
     <div>
          <div>
-        <div className="navbar fixed z-10 bg-black/30 text-white ">
+        <div className="navbar fixed z-10 bg-black/20 text-white ">
     <div className="navbar-start">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ export const Navbar = () => {
       </ul>
     </div>
     <div className="navbar-end">
-      <a className="btn">Button</a>
+      <Link to={"/login"} className="btn">Login</Link>
     </div>
   </div></div>
     </div>

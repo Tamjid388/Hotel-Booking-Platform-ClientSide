@@ -1,7 +1,11 @@
 import React from 'react'
+import { Banner } from './Banner/Banner'
 
 export const Home = () => {
   return (
-    <div>Hasaome</div>
+    <div>
+        
+        <Banner></Banner>
+    </div>
   )
 }
