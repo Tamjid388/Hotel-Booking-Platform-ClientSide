@@ -1,12 +1,10 @@
 [
-  
-
     {
       "id": 1,
       "name": "Deluxe King Room",
       "description": "A luxurious room featuring a king-sized bed, modern amenities, and a spacious balcony with a stunning city view.",
       "cost_per_night": 150,
-      "image_url": " https://i.ibb.co.com/H2Ky9My/6.jpg",
+      "image_url": "https://i.ibb.co.com/dK2VzjN/room1.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -29,7 +27,7 @@
       "name": "Premium Family Suite",
       "description": "Perfect for families, this suite includes two queen-sized beds, a living area, and a kitchenette.",
       "cost_per_night": 250,
-      "image_url": "https://i.ibb.co.com/1MrLpHm/9.jpg",
+      "image_url": "https://i.ibb.co.com/hcPSzgk/room2.jpg",
       "capacity": 4,
       "availability": false,
       "reviews": []
@@ -39,7 +37,7 @@
       "name": "Executive Suite",
       "description": "An elegant suite featuring a separate bedroom, living room, and a luxurious bathroom with a jacuzzi.",
       "cost_per_night": 300,
-      "image_url": "https://i.ibb.co.com/wNYj1j2/room1.jpg",
+      "image_url": "https://i.ibb.co.com/b6csqVc/room3.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -56,7 +54,7 @@
       "name": "Standard Room",
       "description": "A cozy and affordable room with a queen-sized bed and all the basic amenities.",
       "cost_per_night": 100,
-      "image_url": "https://i.ibb.co.com/jZFgkqP/room2.jpg",
+      "image_url": "https://i.ibb.co.com/6JP02xs/room4.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -73,7 +71,7 @@
       "name": "Luxury Villa",
       "description": "A private villa with a pool, garden, and spacious interiors for ultimate relaxation.",
       "cost_per_night": 500,
-      "image_url": " https://i.ibb.co.com/nr2h7Rn/room3.jpg",
+      "image_url": "https://i.ibb.co.com/X3Hvzfj/room5.jpg",
       "capacity": 6,
       "availability": true,
       "reviews": []
@@ -83,7 +81,7 @@
       "name": "Penthouse Suite",
       "description": "A luxurious penthouse with breathtaking views, modern decor, and exclusive amenities.",
       "cost_per_night": 1000,
-      "image_url": "https://i.ibb.co.com/C25VRbk/room4.jpg",
+      "image_url": "https://i.ibb.co.com/TMg8k3d/room7.jpg",
       "capacity": 4,
       "availability": true,
       "reviews": [
@@ -100,7 +98,7 @@
       "name": "Beachfront Bungalow",
       "description": "A charming bungalow with direct access to the beach and a stunning ocean view.",
       "cost_per_night": 400,
-      "image_url": "https://i.ibb.co.com/6tQWshL/room5.jpg",
+      "image_url": "https://i.ibb.co.com/5jvR5qr/room8.jpg",
       "capacity": 3,
       "availability": true,
       "reviews": []
@@ -110,7 +108,7 @@
       "name": "Garden View Room",
       "description": "A tranquil room overlooking the lush garden, perfect for nature lovers.",
       "cost_per_night": 120,
-      "image_url": " https://i.ibb.co.com/TcvbKnW/room7.jpg",
+      "image_url": "https://i.ibb.co.com/cJFqmq2/room10.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -127,7 +125,7 @@
       "name": "Business Suite",
       "description": "Designed for business travelers, this suite includes a work desk, high-speed internet, and meeting space.",
       "cost_per_night": 200,
-      "image_url": "https://i.ibb.co.com/djcSz5L/room8.jpg",
+      "image_url": "https://i.ibb.co.com/DkpbHDR/6.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": []
@@ -137,7 +135,7 @@
       "name": "Rustic Cabin",
       "description": "A cozy cabin in the woods with a fireplace and a charming rustic ambiance.",
       "cost_per_night": 180,
-      "image_url": "https://i.ibb.co.com/T8sLz25/room10.jpg",
+      "image_url": "https://i.ibb.co.com/tzPxGGB/9.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -154,7 +152,7 @@
       "name": "Presidential Suite",
       "description": "The epitome of luxury, this suite offers exquisite decor and personalized services.",
       "cost_per_night": 1500,
-      "image_url": "https://i.ibb.co.com/jZFgkqP/room2.jpg",
+      "image_url": "https://i.ibb.co.com/hcPSzgk/room2.jpg",
       "capacity": 5,
       "availability": true,
       "reviews": []
@@ -164,7 +162,7 @@
       "name": "Eco-Friendly Room",
       "description": "A room with sustainable features and eco-friendly materials.",
       "cost_per_night": 140,
-      "image_url": "https://i.ibb.co.com/wNYj1j2/room1.jpg",
+      "image_url": "https://i.ibb.co.com/b6csqVc/room3.jpg",
       "capacity": 2,
       "availability": true,
       "reviews": [
@@ -181,7 +179,7 @@
       "name": "Mountain Lodge",
       "description": "A scenic lodge with stunning mountain views and cozy interiors.",
       "cost_per_night": 220,
-      "image_url": "https://i.ibb.co.com/1MrLpHm/9.jpg",
+      "image_url": "https://i.ibb.co.com/6JP02xs/room4.jpg",
       "capacity": 4,
       "availability": true,
       "reviews": []
@@ -191,7 +189,7 @@
       "name": "Studio Apartment",
       "description": "A fully-furnished studio with modern facilities and a small kitchenette.",
       "cost_per_night": 90,
-      "image_url": "https://i.ibb.co.com/TcvbKnW/room7.jpg",
+      "image_url": "https://i.ibb.co.com/TMg8k3d/room7.jpg",
       "capacity": 1,
       "availability": true,
       "reviews": []
