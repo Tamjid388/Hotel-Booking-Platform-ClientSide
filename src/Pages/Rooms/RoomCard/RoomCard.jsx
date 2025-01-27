@@ -17,7 +17,7 @@ export const RoomCard = ({room}) => {
     </h2>
     <p>{description}</p>
     <div className="card-actions justify-end">
-      <button className='btn btn-outline rounded-none'>More Info</button>
+      <button className='btn btn-outline  rounded-none'>More Info</button>
     </div>
   </div>
 </div>
