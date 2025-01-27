@@ -8,6 +8,7 @@ import { Error } from "../Pages/ErrorPage/Error";
 import { Register } from "../Pages/Register/Register";
 import { Login } from "../Pages/Login/Login";
 import { Rooms } from "../Pages/Rooms/Rooms";
+import { RoomDetails } from "../Pages/RoomDetails/RoomDetails";
 
 
 
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
         {
           path:"/rooms",
           element:<Rooms></Rooms>
+        },
+        {
+          path:'/roomdetails/:id',
+          element:<RoomDetails></RoomDetails>
+
         }
       ]
     },

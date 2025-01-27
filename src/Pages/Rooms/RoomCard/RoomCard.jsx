@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const RoomCard = ({room}) => {
   const {id,name,image_url,availability,cost_per_night,description,reviews}=room
   return (
-    <div>
+    <Link to={`/roomDetails/${room._id}`}>
       <div className="card bg-base-100 rounded-none shadow-xl h-full">
   <figure className='h-[250px]'>
     <img className='h-full w-full object-cover'
@@ -21,6 +22,6 @@ export const RoomCard = ({room}) => {
     </div>
   </div>
 </div>
-    </div>
+    </Link>
   )
 }

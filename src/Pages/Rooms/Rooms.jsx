@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 import { RoomCard } from "./RoomCard/RoomCard"
 import { Title } from "../../Component/Title/Title"
+import axios from "axios"
 
 
 export const Rooms = () => {
     const [rooms,setRooms]=useState([])
 useEffect(()=>{
-    fetch("room.json")
-    .then(res=>res.json())
-    .then(data=>{
-        setRooms(data)
-
-    })
+  axios.get('http://localhost:5000/rooms')
+.then(res=>{
+  setRooms(res.data);
+})
 
 },[])
+
 
   return (
     <div>
