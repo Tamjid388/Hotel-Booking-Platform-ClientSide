@@ -32,7 +32,7 @@ import { Authcontext } from "../../Providers/Authprovider";
   } = useQuery({
     queryKey: ["rooms"],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:5000/rooms/${id}`);
+      const res = await axios.get(`https://hotel-booking-platform-server.vercel.app/rooms/${id}`);
       return res.data;
     },
   });
@@ -56,7 +56,7 @@ import { Authcontext } from "../../Providers/Authprovider";
   } = useQuery({
     queryKey: ["bookedDates", id],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:5000/bookings/${id}`);
+      const res = await axios.get(`https://hotel-booking-platform-server.vercel.app/bookings/${id}`);
       return res.data;
     },
   });
@@ -113,7 +113,7 @@ import { Authcontext } from "../../Providers/Authprovider";
     };
 
     axios
-      .post("http://localhost:5000/bookings", bookingData)
+      .post("https://hotel-booking-platform-server.vercel.app/bookings", bookingData)
       .then(() => {
         Swal.fire("Success!", "Successfully Booked Room", "success");
         navigate("/rooms");

@@ -29,7 +29,7 @@ export const Register = () => {
           photo:data.photoUrl
 
         }
-        axios.post('http://localhost:5000/users',userInfo)
+        axios.post('https://hotel-booking-platform-server.vercel.app/users',userInfo)
         .then(res=>{
           if(res.data.insertedId){
             Swal.fire("Signup Successfull")
@@ -41,6 +41,25 @@ export const Register = () => {
       })
     })
  
+  }
+  function handleGoogleLogin(){
+    signinwithGoogle()
+  .then(result=>{
+    console.log(result.user)
+    const userInfo={
+      name:result.user?.name,
+      email:result.user?.email
+
+    
+    }
+    axios.post('/users',userInfo)
+    .then(res=>{
+      Swal.fire('Signup Success')
+      navigate('/')
+    })
+  })
+    
+
   }
 
   
@@ -136,7 +155,7 @@ export const Register = () => {
 
           <div className='divider'>OR</div>
           <div className="form-control mt-4">
-            <button  className="btn btn-outline w-full hover:btn-ghost">
+            <button onClick={handleGoogleLogin}  className="btn btn-outline w-full hover:btn-ghost">
              Login With Google <span className="text-2xl "><FcGoogle /></span>
             </button>
           </div>

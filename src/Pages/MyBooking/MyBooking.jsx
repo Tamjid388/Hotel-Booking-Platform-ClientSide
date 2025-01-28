@@ -21,7 +21,7 @@ export const MyBooking = () => {
       } = useQuery({
         queryKey: [, "bookings",user?.email],
         queryFn: async () => {
-          const res = await axios.get(`http://localhost:5000/myBookings/${user.email}`);
+          const res = await axios.get(`https://hotel-booking-platform-server.vercel.app/myBookings/${user.email}`);
           console.log(res.data);
           return res.data;
         },
@@ -41,7 +41,7 @@ export const MyBooking = () => {
       } = useQuery({
         queryKey: ["dates", id],
         queryFn: async () => {
-          const res = await axios.get(`http://localhost:5000/bookings/${id}`);
+          const res = await axios.get(`https://hotel-booking-platform-server.vercel.app/bookings/${id}`);
           return res.data;
         },
       });
@@ -61,7 +61,7 @@ export const MyBooking = () => {
         };
     
         axios
-          .patch(`http://localhost:5000/updateBooking`, bookingData)
+          .patch(`https://hotel-booking-platform-server.vercel.app/updateBooking`, bookingData)
           .then(() => {
             refetch();
             refetchDates();
@@ -102,7 +102,7 @@ export const MyBooking = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:5000/cancelbooking/${id}`)
+          .delete(`https://hotel-booking-platform-server.vercel.app/cancelbooking/${id}`)
           .then(() => {
             refetch();
             Swal.fire("Success!", "Successfully Canceled Booking", "success");
@@ -127,7 +127,7 @@ export const MyBooking = () => {
         reting: rating,
         reviewDate:today
     }
-    axios.post(`http://localhost:5000/givereview`,reviewinfo)
+    axios.post(`https://hotel-booking-platform-server.vercel.app/givereview`,reviewinfo)
     .then(res=>{
         Swal.fire("Review Given")
     })

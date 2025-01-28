@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/cJFqmq2/room10.jpg",
+      "date": "March 19, 2020",
+      "title": "A Night in Norway",
+      "description": "Discover the best hotels in Norway for a cozy stay. From luxurious suites to affordable lodgings, our guide helps you choose the perfect place for your next adventure in the stunning Norwegian landscapes.",
+      "link": "/blog/a-night-in-norway"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/Y7GvBLtf/cafe.jpg",
+      "date": "March 19, 2020",
+      "title": "Coffee in Malmö: The Best Hotel Stays",
+      "description": "Looking for the perfect blend of comfort and style during your stay in Malmö? Our list of top hotels near the city’s best coffee spots ensures you have an unforgettable experience, whether you're in town for business or leisure.",
+      "link": "/blog/coffee-in-malmo"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/cJFqmq2/room10.jpg",
+      "date": "March 19, 2020",
+      "title": "Staying in Italy",
+      "description": "Explore Italy’s stunning outdoor destinations with luxury camping experiences. We highlight the best glamping sites that combine nature and comfort, so you can enjoy Italy’s beauty without sacrificing luxury.",
+      "link": "/blog/camping-in-italy"
+    }
+  ]
+  

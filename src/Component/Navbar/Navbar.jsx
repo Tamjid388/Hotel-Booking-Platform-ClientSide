@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Authcontext } from '../../Providers/Authprovider'
+import { FcNegativeDynamic } from 'react-icons/fc'
+import Swal from 'sweetalert2'
 
 export const Navbar = () => {
-  const {user}=useContext(Authcontext)
+  const {user,logout}=useContext(Authcontext)
     const navOptions=
     <>
     <li><NavLink className={'mx-1'} to={'/'}> Home</NavLink></li>
@@ -14,6 +16,17 @@ export const Navbar = () => {
     
    
     </>
+    function handlelogout(){
+      logout()
+      .then(()=>{
+        console.log("Logged out");
+        Swal.fire({
+          title: "Logged out!",
+          icon: "success",
+          draggable: true
+        });
+      })
+    }
   return (
     <div>
          <div>
@@ -50,7 +63,7 @@ export const Navbar = () => {
     <div className="navbar-end">
      {
       user?  
-      <Link  className="btn">Logout</Link>
+      <Link onClick={handlelogout}  className="btn">Logout</Link>
       : <Link to={"/login"} className="btn">Login</Link>
      }
     </div>
