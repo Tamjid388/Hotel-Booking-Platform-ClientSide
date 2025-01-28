@@ -1,7 +1,15 @@
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form"
+import { useContext } from "react";
+import { Authcontext } from "../../Providers/Authprovider";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
+  const {user,createUser,
+    signinwithGoogle,UpdateProfile}=useContext(Authcontext)
+    const navigate=useNavigate()
   const {
     register,
     handleSubmit,
@@ -9,7 +17,29 @@ export const Register = () => {
     formState: { errors },
   } = useForm()
   const onSubmit = (data) => {
-    console.log(data)
+    createUser(data.email, data.password)
+    .then(result=>{
+      const loggedUser = result.user;
+        console.log(loggedUser);
+      UpdateProfile(data.name, data.photoUrl)
+      .then(()=>{
+        const userInfo={
+          name:data.name,
+          email:data.email,
+          photo:data.photoUrl
+
+        }
+        axios.post('http://localhost:5000/users',userInfo)
+        .then(res=>{
+          if(res.data.insertedId){
+            Swal.fire("Signup Successfull")
+            navigate('/')
+            
+          }
+        })
+      
+      })
+    })
  
   }
 
@@ -49,21 +79,51 @@ export const Register = () => {
               required
             />
           </div>
+          {/* Photo URL */}
+<div className="form-control">
+  <label className="label">
+    <span className="label-text">Photo URL</span>
+  </label>
+  <input
+    type="text"
+    name="photoUrl"
+    placeholder="Enter photo URL"
+    {...register("photoUrl")}
+    className="input input-bordered w-full"
+    required
+  />
+</div>
 
-          {/* Password */}
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Password</span>
-            </label>
-            <input
-              type="password"
-              name="password"
-              {...register("password")}
-              placeholder="Enter your password"
-              className="input input-bordered w-full"
-              required
-            />
-          </div>
+
+       {/* Password */}
+<div className="form-control">
+  <label className="label">
+    <span className="label-text">Password</span>
+  </label>
+  <input
+    type="password"
+    name="password"
+    {...register("password", {
+      required: "Password is required",
+      minLength: {
+        value: 6,
+        message: "Password must be at least 6 characters",
+      },
+      validate: {
+        hasUppercase: (value) =>
+          /[A-Z]/.test(value) || "Password must include an uppercase letter",
+        hasLowercase: (value) =>
+          /[a-z]/.test(value) || "Password must include a lowercase letter",
+      },
+    })}
+    placeholder="Enter your password"
+    className="input input-bordered w-full"
+  />
+  {errors.password && (
+    <p className="text-red-500 text-sm mt-2">{errors.password.message}</p>
+  )}
+</div>
+
 
     
 
