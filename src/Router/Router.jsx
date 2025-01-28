@@ -9,6 +9,7 @@ import { Register } from "../Pages/Register/Register";
 import { Login } from "../Pages/Login/Login";
 import { Rooms } from "../Pages/Rooms/Rooms";
 import { RoomDetails } from "../Pages/RoomDetails/RoomDetails";
+import { Demo } from "../Component/Demo/Demo";
 
 
 
@@ -23,6 +24,11 @@ export const router = createBrowserRouter([
         {
             path: "/",
             element:<Home></Home>,
+
+        },
+        {
+          path:'/demo',
+          element:<Demo></Demo>
 
         },
        
