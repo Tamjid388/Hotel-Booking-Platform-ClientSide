@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form"
+import { useLocation } from "react-router-dom";
 
 export const Login = () => {
 const {
@@ -12,6 +13,8 @@ const {
     console.log(data)
  
   }
+  const location=useLocation()
+  const from=location.state?.from.pathname || '/'
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">

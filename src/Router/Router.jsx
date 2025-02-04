@@ -11,6 +11,7 @@ import { Rooms } from "../Pages/Rooms/Rooms";
 import { RoomDetails } from "../Pages/RoomDetails/RoomDetails";
 import { Demo } from "../Component/Demo/Demo";
 import { MyBooking } from "../Pages/MyBooking/MyBooking";
+import { Privateroute } from "./Privateroute";
 
 
 
@@ -53,7 +54,9 @@ export const router = createBrowserRouter([
         },
         {
           path:'/mybookings',
-          element:<MyBooking></MyBooking>
+          element:<Privateroute>
+            <MyBooking></MyBooking>
+          </Privateroute>
         }
       ]
     },

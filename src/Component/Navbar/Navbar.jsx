@@ -11,7 +11,7 @@ export const Navbar = () => {
     <li><NavLink className={'mx-1'} to={'/'}> Home</NavLink></li>
     <li><NavLink className={'mx-1'} to={'/rooms'}>Rooms</NavLink></li>
     <li><NavLink className={'mx-1'} to={'/register'}>Register</NavLink></li>
-    <li><NavLink className={'mx-1'} to={'/demo'}>Demo</NavLink></li>
+   
     <li><NavLink className={'mx-1'} to={'/mybookings'}>My Bookings</NavLink></li>
     
    

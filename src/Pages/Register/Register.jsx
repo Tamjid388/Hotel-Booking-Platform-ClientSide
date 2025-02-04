@@ -52,7 +52,7 @@ export const Register = () => {
 
     
     }
-    axios.post('/users',userInfo)
+    axios.post('https://hotel-booking-platform-server.vercel.app/users',userInfo)
     .then(res=>{
       Swal.fire('Signup Success')
       navigate('/')

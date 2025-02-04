@@ -117,12 +117,14 @@ export const MyBooking = () => {
       }
     });
   };
+  
     // Handle the review 
   const handleReviewSubmit = () => {
 
     console.log("Review Submitted:", review);
     console.log("Rating:", rating);
     const reviewinfo={
+        username:user.name,
         review: review,
         reting: rating,
         reviewDate:today

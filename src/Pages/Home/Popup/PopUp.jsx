@@ -1,19 +1,26 @@
-import React, { useState } from "react";
-
+import React, { useContext, useEffect, useState } from "react";
+import { Authcontext } from "../../../Providers/Authprovider";
 
 export const PopUp = () => {
-    const [isModalOpen, setIsModalOpen] = useState(true);
+  const { user } = useContext(Authcontext);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
 
-    
-    const closeModal = () => {
-        setIsModalOpen(false); // Close modal
-      
-      };
+  useEffect(() => {
+    if (user) {
+      setIsModalOpen(true);
+    } else {
+      setIsModalOpen(false);
+    }
+  }, [user]);
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Close modal
+  };
 
   return (
     <div>
-         {isModalOpen && (
+      {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -53,7 +60,6 @@ export const PopUp = () => {
           </div>
         </div>
       )}
-
     </div>
-  )
-}
+  );
+};
