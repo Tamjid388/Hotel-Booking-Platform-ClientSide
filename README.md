@@ -51,7 +51,7 @@ Live demo: [Hotel Quest - Live Link](https://hotel-quest-87bc7.web.app/)
 ### 404 Page 🚀
 - A custom 404 page with an exciting gif/jpg and a "Back to home" button.
 
-## Technologies Used
+## Dependecies Used
 
 - **React.js** for building the front-end
 - **Firebase Authentication** for user authentication (email/password, Google/GitHub login)
