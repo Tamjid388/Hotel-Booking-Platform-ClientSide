@@ -13,7 +13,7 @@ export const Blog = () => {
     },[])
   return (
     <div className='w-11/12 mx-auto'>
-        <h1 className='text-center mt-16 text-3xl font-bold mb-12'>
+        <h1 className='text-center my-16 text-4xl font-bold mb-12'>
            Blogs</h1>
 
            <section className='grid grid-cols-1 md:grid-cols-3 gap-8'>

@@ -32,8 +32,8 @@ if(isLoading){
 
 
   return (
-    <div className="pt-8">
-      <div className="pt-16">
+    <div className="py-24">
+      <div className="">
       <Title 
        heading="Explore Our Exquisite Rooms"
        subheading="Comfort, luxury, and elegance combined for an unforgettable stay."

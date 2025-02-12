@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Authcontext } from '../../Providers/Authprovider';
 import Swal from 'sweetalert2';
 import moment from 'moment';
+import { Spinner } from '../../Component/Spinner/Spinner';
 
 export const MyBooking = () => {
     const {user}=useContext(Authcontext)
@@ -140,12 +141,12 @@ export const MyBooking = () => {
 
 
   if(isPending){
-    return <h2 className='py-16 text-3xl font-bold'>Loading....</h2>
+    return <Spinner></Spinner>
   }
 
     
   return (
-    <div className='py-16 container mx-auto'>
+    <div className='py-24 container mx-auto'>
         <Title heading={'My Bookings'}></Title>
         <div>
 

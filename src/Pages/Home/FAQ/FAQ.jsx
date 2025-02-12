@@ -2,8 +2,8 @@ import faqimg from '../../../assets/faq.jpg'
 
 export const FAQ = () => {
   return (
-  <div className=''>
-    <h1 className='text-center mt-12 text-3xl font-bold'>Frequently Asked Questions</h1>
+  <div className='my-16'>
+    <h1 className='text-center  text-4xl font-bold'>Frequently Asked Questions</h1>
       <div className='my-16 w-11/12 mx-auto flex flex-col md:flex-row gap-6 justify-center items-center'>
 <section className='md:w-1/2'>
     <img className='h-[380px] w-full object-cover' src={faqimg} alt="" />
