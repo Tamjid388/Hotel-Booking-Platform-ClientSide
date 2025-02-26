@@ -12,6 +12,7 @@ import { RoomDetails } from "../Pages/RoomDetails/RoomDetails";
 import { Demo } from "../Component/Demo/Demo";
 import { MyBooking } from "../Pages/MyBooking/MyBooking";
 import { Privateroute } from "./Privateroute";
+import { AboutUs } from "../Pages/AboutUs/AboutUs";
 
 
 
@@ -56,6 +57,11 @@ export const router = createBrowserRouter([
           path:'/mybookings',
           element:<Privateroute>
             <MyBooking></MyBooking>
+          </Privateroute>
+        },{
+          path:'/about',
+          element:<Privateroute>
+            <AboutUs></AboutUs>
           </Privateroute>
         }
       ]

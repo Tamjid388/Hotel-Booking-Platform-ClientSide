@@ -13,6 +13,7 @@ export const Navbar = () => {
     <li><NavLink className={'mx-1'} to={'/register'}>Register</NavLink></li>
    
     <li><NavLink className={'mx-1'} to={'/mybookings'}>My Bookings</NavLink></li>
+    <li><NavLink className={'mx-1'} to={'/about'}>About Us</NavLink></li>
     
    
     </>
