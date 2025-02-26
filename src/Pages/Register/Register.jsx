@@ -64,8 +64,8 @@ export const Register = () => {
 
   
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-    <div className="card w-full max-w-lg bg-white shadow-xl">
+    <div className="flex justify-center items-center h-screen bg-base">
+    <div className="card w-full max-w-lg bg-base shadow-xl">
       <div className="card-body">
         <h2 className="text-2xl font-bold text-center mb-4">Register</h2>
         <form onSubmit={handleSubmit(onSubmit)}>

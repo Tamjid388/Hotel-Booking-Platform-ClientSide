@@ -17,8 +17,8 @@ const {
   const from=location.state?.from.pathname || '/'
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="card w-full max-w-xl bg-white shadow-xl p-8">
+    <div className="flex justify-center items-center min-h-screen bg-base">
+      <div className="card w-full max-w-xl bg-base shadow-xl p-8">
         <div className="card-body">
           <h2 className="text-3xl font-bold text-center mb-6">Login</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
