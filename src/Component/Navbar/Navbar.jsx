@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { Authcontext } from '../../Providers/Authprovider'
 import { FcNegativeDynamic } from 'react-icons/fc'
 import Swal from 'sweetalert2'
+import { Toggle } from '../DarkMode/Toggle'
 
 export const Navbar = () => {
   const {user,logout}=useContext(Authcontext)
@@ -65,8 +66,13 @@ export const Navbar = () => {
     <div className="navbar-end">
      {
       user?  
-      <Link onClick={handlelogout}  className="btn">Logout</Link>
-      : <Link to={"/login"} className="btn">Login</Link>
+     <>
+      <Toggle></Toggle>
+      <Link onClick={handlelogout}  className="btn">Logout</Link></>
+      :
+      <>
+      <Toggle></Toggle>
+      </>
      }
     </div>
   </div></div>

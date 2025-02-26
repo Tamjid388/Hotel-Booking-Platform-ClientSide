@@ -14,7 +14,7 @@ export const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="team py-12 bg-gray-100">
+      <section className="team py-12 bg-base">
         <h2 className="text-3xl font-semibold text-center mb-6">Meet Our Team</h2>
         <div className="flex justify-center gap-8">
           <div className="team-member text-center">
