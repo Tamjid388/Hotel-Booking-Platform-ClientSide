@@ -8,7 +8,7 @@ export const AboutUs = () => {
       {/* Company Overview Section */}
       <section className="company-overview py-12 px-4">
         <h2 className="text-3xl font-semibold text-center mb-6">Our Company</h2>
-        <p className="text-lg text-center">
+        <p className="text-lg text-center container mx-auto">
           At HotelQuest, we are committed to providing the best hotel booking experience, offering a seamless interface, secure transactions, and a wide selection of properties worldwide. Whether you're looking for a luxurious stay or a budget-friendly option, we ensure a memorable experience for every traveler.
         </p>
       </section>
@@ -20,7 +20,7 @@ export const AboutUs = () => {
           <div className="team-member text-center">
             <div className="avatar">
               <div className="w-24 rounded-full">
-                <img src="team-member1.jpg" alt="Team Member 1" />
+                <img src="https://i.ibb.co.com/tcsPbcr/person1.jpg" alt="Team Member 1" />
               </div>
             </div>
             <h3 className="text-xl font-semibold mt-4">John Doe</h3>
@@ -29,7 +29,7 @@ export const AboutUs = () => {
           <div className="team-member text-center">
             <div className="avatar">
               <div className="w-24 rounded-full">
-                <img src="team-member2.jpg" alt="Team Member 2" />
+                <img src="https://i.ibb.co.com/dfvpWz6/ayo-ogunseinde-6-W4-F62s-N-y-I-unsplash.jpg" alt="Team Member 2" />
               </div>
             </div>
             <h3 className="text-xl font-semibold mt-4">Jane Smith</h3>
