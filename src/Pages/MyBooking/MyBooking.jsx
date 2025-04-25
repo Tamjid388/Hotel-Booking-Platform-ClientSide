@@ -146,6 +146,8 @@ export const MyBooking = () => {
 
   return (
     <div className="py-24 container mx-auto">
+ <title>My Bookings | HotelQuest</title>
+
       <Title heading={"My Bookings"}></Title>
       <div>
         {bookings.length > 0 ? (

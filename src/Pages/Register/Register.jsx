@@ -65,6 +65,7 @@ export const Register = () => {
   
   return (
     <div className="flex justify-center items-center h-screen bg-base">
+      <title>Register | HotelQuest</title>
     <div className="card w-full max-w-lg bg-base shadow-xl">
       <div className="card-body">
         <h2 className="text-2xl font-bold text-center mb-4">Register</h2>

@@ -3,6 +3,7 @@ import React from 'react';
 export const AboutUs = () => {
   return (
     <div className='py-16'>
+      <title>About | HotelQuest</title>
   
 
       {/* Company Overview Section */}

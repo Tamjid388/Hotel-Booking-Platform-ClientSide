@@ -33,6 +33,7 @@ if(isLoading){
 
   return (
     <div className="py-24">
+       <title>Rooms | HotelQuest</title>
       <div className="">
       <Title 
        heading="Explore Our Exquisite Rooms"

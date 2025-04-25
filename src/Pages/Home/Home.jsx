@@ -10,7 +10,7 @@ import { PopUp } from './Popup/PopUp'
 export const Home = () => {
   return (
     <div>
-        
+         <title>  Home | HotelQuest</title>
         <Banner></Banner>
         <HotelMap></HotelMap>
         <Blog></Blog>
