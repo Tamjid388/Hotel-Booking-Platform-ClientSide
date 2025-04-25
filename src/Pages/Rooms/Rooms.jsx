@@ -34,7 +34,7 @@ if(isLoading){
   return (
     <div className="py-24">
        <title>Rooms | HotelQuest</title>
-      <div className="">
+      <div className="my-4">
       <Title 
        heading="Explore Our Exquisite Rooms"
        subheading="Comfort, luxury, and elegance combined for an unforgettable stay."
