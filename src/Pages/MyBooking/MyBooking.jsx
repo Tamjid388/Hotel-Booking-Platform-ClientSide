@@ -147,65 +147,72 @@ export const MyBooking = () => {
     
   return (
     <div className='py-24 container mx-auto'>
+
         <Title heading={'My Bookings'}></Title>
         <div>
 
-        <div className="overflow-x-auto">
-  <table className="table">
-    {/* head */}
-    <thead>
-      <tr>
-       
-        <th>Name</th>
-        <th>Price</th>
-       <th>Review</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      {/* row 1 */}
-    {
-        bookings.map(booking=>  <tr key={booking._id}>
-        
-            <td>
-              <div className="flex items-center gap-3">
-                <div className="avatar">
-                  <div className="mask mask-squircle h-12 w-12">
-                    <img
-                      src={booking.image_url}
-                      alt="Avatar Tailwind CSS Component" />
-                  </div>
-                </div>
-                <div>
-                  <div className="font-bold">{booking.name}</div>
-                 
-                </div>
-              </div>
-            </td>
-            <td>
-            {booking.cost_per_night}
+      {
+        bookings.length>0 ?  <div className="overflow-x-auto ">
+        <table className="table">
+          {/* head */}
+          <thead>
+            <tr>
              
-            </td>
-            <td>
-                <button
-                onClick={()=>document.getElementById('my_modal_3').showModal()}
-                className="btn btn-sm text-sm bg-blue-100">Review</button>
-            </td>
-           
-            <th>
-                <button   onClick={() => {
-                      setId(booking.roomId);
-                      document.getElementById("my_modal_5").showModal();
-                    }} className="btn btn-outline btn-xs">Update</button>
-              <button onClick={()=>handleCancelBooking(booking._id)} className="btn btn-ghost btn-xs">Cancel</button>
-            </th>
-          </tr>)
-    }
-      
-    </tbody>
-  
-  </table>
-</div>
+              <th>Name</th>
+              <th>Price</th>
+             <th>Review</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+          {
+              bookings.map(booking=>  <tr key={booking._id}>
+              
+                  <td>
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle h-12 w-12">
+                          <img
+                            src={booking.image_url}
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold">{booking.name}</div>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                  {booking.cost_per_night}
+                   
+                  </td>
+                  <td>
+                      <button
+                      onClick={()=>document.getElementById('my_modal_3').showModal()}
+                      className="btn btn-sm text-sm bg-blue-100">Review</button>
+                  </td>
+                 
+                  <th>
+                      <button   onClick={() => {
+                            setId(booking.roomId);
+                            document.getElementById("my_modal_5").showModal();
+                          }} className="btn btn-outline btn-xs">Update</button>
+                    <button onClick={()=>handleCancelBooking(booking._id)} className="btn btn-ghost btn-xs">Cancel</button>
+                  </th>
+                </tr>)
+          }
+            
+          </tbody>
+        
+        </table>
+      </div>
+      :
+      <p className="text-center text-lg text-gray-600 mt-5 font-semibold bg-gray-100 p-4 rounded">
+  You have no bookings yet. Start by booking a service!
+</p>
+      }
            
         </div>
 
