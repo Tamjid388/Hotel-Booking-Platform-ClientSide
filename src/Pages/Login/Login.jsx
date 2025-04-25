@@ -1,7 +1,13 @@
 import { useForm } from "react-hook-form"
 import { useLocation } from "react-router-dom";
+import Swal from "sweetalert2";
+import { Authcontext } from "../../Providers/Authprovider";
+import { useContext } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export const Login = () => {
+    const {user,createUser,
+      signinwithGoogle,UpdateProfile}=useContext(Authcontext)
 const {
     register,
     handleSubmit,
@@ -12,6 +18,26 @@ const {
   const onSubmit = (data) => {
     console.log(data)
  
+  }
+
+  function handleGoogleLogin(){
+    signinwithGoogle()
+  .then(result=>{
+    console.log(result.user)
+    const userInfo={
+      name:result.user?.name,
+      email:result.user?.email
+
+    
+    }
+    axios.post('https://hotel-booking-platform-server.vercel.app/users',userInfo)
+    .then(res=>{
+      Swal.fire('Signup Success')
+      navigate('/')
+    })
+  })
+    
+
   }
   const location=useLocation()
   const from=location.state?.from.pathname || '/'
@@ -51,6 +77,13 @@ const {
                 required
               />
             </div>
+
+             <div className='divider'>OR</div>
+                      <div className="form-control mt-4">
+                        <button onClick={handleGoogleLogin}  className="btn btn-outline w-full hover:btn-ghost">
+                         Login With Google <span className="text-2xl "><FcGoogle /></span>
+                        </button>
+                      </div>
 
 
             {/* Submit Button */}
