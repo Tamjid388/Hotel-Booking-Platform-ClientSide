@@ -18,7 +18,7 @@ export const Banner = () => {
             <div className=" absolute inset-0 flex flex-col justify-center items-start px-8 bg-black bg-opacity-10   md:px-20">
               <h1 className="text-4xl md:text-5xl text-white font-bold">Welcome to Our Hotel</h1>
               <p className="text-lg md:text-xl text-white mt-4">
-                Experience the luxury and comfort of our premium suites.
+              Experience unmatched comfort, world-class service, and luxurious suites in the heart of the city.
               </p>
               <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
                 Book Now
@@ -33,7 +33,7 @@ export const Banner = () => {
             <div className=" absolute inset-0 flex flex-col justify-center items-start px-8 bg-black bg-opacity-10   md:px-20">
               <h1 className="text-4xl md:text-5xl text-white font-bold">Relax and Rejuvenate</h1>
               <p className="text-lg md:text-xl text-white mt-4">
-              Discover our spa retreats designed for your ultimate relaxation
+              Discover spa retreats, soothing massages, and ultimate relaxation for your body and mind.
               </p>
               <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
                 Book Now
@@ -46,9 +46,9 @@ export const Banner = () => {
         <div lassName="relative h-full">
             <img className="object-cover" src={slider3} alt="" />
             <div className=" absolute inset-0 flex flex-col justify-center items-start px-8 bg-black bg-opacity-10   md:px-20">
-              <h1 className="text-4xl md:text-5xl text-white font-bold">Adventure Awaits</h1>
+              <h1 className="text-4xl md:text-5xl text-white font-bold"> Adventure Awaits Around Every Corner</h1>
               <p className="text-lg md:text-xl text-white mt-4">
-              Explore vibrant cityscapes and breathtaking natural wonders
+              Dive into thrilling experiences, from city explorations to nature’s hidden gems.
               </p>
               <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
                 Book Now
@@ -60,9 +60,9 @@ export const Banner = () => {
         <div lassName="relative h-full">
             <img className="object-cover" src={slider4} alt="" />
             <div className=" absolute inset-0 flex flex-col justify-center items-start px-8 bg-black bg-opacity-10   md:px-20">
-              <h1 className="text-4xl md:text-5xl text-white font-bold">Culinary Delights Await</h1>
+              <h1 className="text-4xl md:text-5xl text-white font-bold"> Culinary Delights That Excite the Senses</h1>
               <p className="text-lg md:text-xl text-white mt-4">
-              Indulge in exquisite dining with flavors from around the world..
+              Indulge in gourmet dishes crafted by top chefs, blending flavors from around the globe.
               </p>
               <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
                 Book Now
