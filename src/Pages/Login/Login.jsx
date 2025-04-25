@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 
 export const Login = () => {
-    const {user,createUser,
+    const {user, signIn,
       signinwithGoogle,UpdateProfile}=useContext(Authcontext)
       const navigate=useNavigate()
 const {
@@ -17,7 +17,33 @@ const {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data)
+    console.log(data.email,data.password);
+    signIn(data.email,data.password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      Swal.fire("Login Successfull!");
+     navigate("/")
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(error);
+    });
+    // .catch((error) => {
+    //   Swal.fire({
+    //     icon: 'error',
+    //     title: 'Login Failed',
+    //     text: 'Invalid email or password. Please try again.',
+       
+    //     confirmButtonColor: '#d33',
+    //     confirmButtonText: 'Try Again',
+    //   });
+      
+    //   const errorCode = error.code;
+    //   const errorMessage = error.message;
+    //   console.log(errorMessage);
+    // });
  
   }
 
