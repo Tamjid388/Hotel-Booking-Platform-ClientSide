@@ -4,6 +4,7 @@ import { HotelMap } from './Map/HotelMap'
 import { FAQ } from './FAQ/FAQ'
 import { Blog } from './Blog/Blog'
 import { PopUp } from './Popup/PopUp'
+import { Relax } from './Relax/Relax'
 
 
 
@@ -13,6 +14,7 @@ export const Home = () => {
          <title>  Home | HotelQuest</title>
         <Banner></Banner>
         <HotelMap></HotelMap>
+        <Relax></Relax>
         <Blog></Blog>
         <FAQ></FAQ>
         <PopUp></PopUp>
