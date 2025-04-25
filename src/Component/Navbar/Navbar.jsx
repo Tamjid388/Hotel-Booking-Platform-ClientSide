@@ -75,6 +75,7 @@ export const Navbar = () => {
       :
       <>
       <Toggle></Toggle>
+      <NavLink className={'btn btn-outline text-white'} to={'/login'}>Login</NavLink>
       </>
      }
     </div>

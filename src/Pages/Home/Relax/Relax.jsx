@@ -2,18 +2,18 @@ import React from 'react'
 
 export const Relax = () => {
   return (
-    <div className='grid grid-cols-2 w-11/12 mx-auto gap-12 my-16'>
+    <div className='grid md:grid-cols-2 w-11/12 mx-auto gap-12 my-16'>
         <div>
             <img src="https://i.ibb.co.com/cJFqmq2/room10.jpg" alt="" />
         </div>
-        <div className='grid'>
+        <div className='grid space-y-2'>
 <p className='font-semibold text-primary'>Hotel Quest</p>
 <h1 className='text-7xl font-bold'>
 Relax  in our <br></br> Hotel Resort
 </h1>
 
 <div className='grid font-semibold
- text-gray-600 grid-cols-2 gap-4'>
+ text-gray-600 md:grid-cols-2 gap-4'>
      <p>Experience luxury and comfort at Hotel Quest, where every guest is treated like royalty. Our resort offers a variety of world-class amenities, ensuring a truly unforgettable stay.</p>
     <p>Indulge in exquisite dining, unwind at our spa, and enjoy stunning panoramic views from your private room. We pride ourselves on delivering exceptional service and creating memorable experiences for all our visitors.</p>
     <p>From pristine beaches to lush gardens, Hotel Quest is the perfect paradise for relaxation, adventure, and exploration. Whether you're here for a peaceful retreat or an exciting getaway, we cater to all your needs and desires.</p>

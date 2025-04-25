@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Authcontext } from "../../Providers/Authprovider";
 import { useContext } from "react";
@@ -8,6 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 export const Login = () => {
     const {user,createUser,
       signinwithGoogle,UpdateProfile}=useContext(Authcontext)
+      const navigate=useNavigate()
 const {
     register,
     handleSubmit,
